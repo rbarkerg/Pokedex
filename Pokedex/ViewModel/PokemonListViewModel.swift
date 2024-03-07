@@ -31,7 +31,6 @@ class PokemonListViewModel: BaseListViewModel<Pokemon> {
         })
     }
     
-    
     func imageUrlFrom(pokemon:Pokemon) -> URL {
         guard let url = URL(string: String(format: "PokemonImagesUrl".localization(), internalPokemonId(stringUrl: pokemon.url))) else {
             fatalError("url ")

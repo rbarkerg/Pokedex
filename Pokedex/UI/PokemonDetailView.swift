@@ -63,14 +63,8 @@ struct PokemonDetailView: View {
         }
         .toolbarBackground(.hidden, for: .navigationBar)
         .navigationBarTitleDisplayMode(.inline)
-//        .toolbarBackground(Color.black.opacity(0), for: .navigationBar)
-//        .toolbarBackground(.visible, for: .navigationBar)
         .onAppear { viewModel.getData() }
         .toolbar { Text(viewModel.pokedexNumber).foregroundStyle(.white) }
-    }
-    
-    private func showError(error: String) {
-        
     }
 }
 
@@ -90,8 +84,6 @@ struct Background: View {
             .clipShape(
                 .rect( cornerRadius: 30))
             .ignoresSafeArea()
-        
-            
     }
 }
 
