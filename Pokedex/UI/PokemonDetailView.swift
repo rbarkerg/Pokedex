@@ -20,7 +20,7 @@ struct PokemonDetailView: View {
                 
         NavigationStack {
             ZStack(alignment: .top) {
-                Background()
+                Background(gradient: LinearGradient(colors: viewModel.gradient, startPoint: .topLeading, endPoint: .bottomTrailing))
                 
                 VStack {
                     AsyncImage(url: viewModel.imageUrlFrom()) { phase in
@@ -61,11 +61,12 @@ struct PokemonDetailView: View {
                 }
             }
         }
+        .toolbarBackground(.hidden, for: .navigationBar)
         .navigationBarTitleDisplayMode(.inline)
-        .toolbarBackground(Color.pink, for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
+//        .toolbarBackground(Color.black.opacity(0), for: .navigationBar)
+//        .toolbarBackground(.visible, for: .navigationBar)
         .onAppear { viewModel.getData() }
-        .toolbar { Text(viewModel.pokedexNumber) }
+        .toolbar { Text(viewModel.pokedexNumber).foregroundStyle(.white) }
     }
     
     private func showError(error: String) {
@@ -79,17 +80,18 @@ struct PokemonDetailView: View {
 
 /// Pink Rectangle decoration and black background
 struct Background: View {
+    let gradient: LinearGradient
     var body: some View {
         Color.black.opacity(0.9).ignoresSafeArea()
         
         Rectangle()
-            .fill(.pink)
-            .frame(height: 300)
+            .fill(gradient)
+            .frame(height: 360)
             .clipShape(
-                .rect(
-                    bottomLeadingRadius: 30,
-                    bottomTrailingRadius: 30
-                ))
+                .rect( cornerRadius: 30))
+            .ignoresSafeArea()
+        
+            
     }
 }
 

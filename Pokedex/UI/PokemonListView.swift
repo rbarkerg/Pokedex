@@ -35,12 +35,12 @@ struct PokemonListView: View {
                     
                 }
                 .scrollContentBackground(.hidden)
-                 .background(Color.white)
+                .background(Color.white)
                 .navigationBarTitle(Text("AppName"), displayMode: .automatic)
                 .toolbarBackground(Color.pink, for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
             }
-            .tint(.black)
+            .tint(.white)
             .alert(isPresented: $viewModel.showErrorAler, content: {
                 Alert(title: Text("Error"))
             })
@@ -52,10 +52,6 @@ struct PokemonListView: View {
                 EmptyView()
             }
         }.onAppear { viewModel.getData() }
-    }
-    
-    func pp () {
-        
     }
 }
 

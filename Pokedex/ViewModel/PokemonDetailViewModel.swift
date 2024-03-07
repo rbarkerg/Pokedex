@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class PokemonDetailViewModel: BaseViewModel {
     private var pokemon: Pokemon
@@ -72,5 +73,9 @@ class PokemonDetailViewModel: BaseViewModel {
     
     var types: [PokeType] {
         return pokemonDetail.types.map { $0.type.name  }
+    }
+    
+    var gradient: [Color] {
+        return types.map { Color.init($0.rawValue) }
     }
 }
