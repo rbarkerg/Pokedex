@@ -42,7 +42,7 @@ struct PokemonDetailView: View {
 
                     TypesView(types: viewModel.types)
                     
-                    MeasuresView(height: viewModel.height, widht: viewModel.widht)
+                    MeasuresView(height: viewModel.height, weight: viewModel.weight)
                     
                     Button {
                         showWebView.toggle()
@@ -116,16 +116,16 @@ struct TypesView: View {
 
 /// Pokemon Measures
 struct MeasuresView: View {
-    let height, widht: String
+    let height, weight: String
     var body: some View {
         HStack {
             Spacer()
             VStack {
                 
-                Text(widht)
+                Text(weight)
                     .font(.title)
                     .foregroundStyle(.white)
-                Text("Widht").foregroundStyle(.white.opacity(0.5))
+                Text("Weight").foregroundStyle(.white.opacity(0.5))
             }
             Spacer()
             VStack {

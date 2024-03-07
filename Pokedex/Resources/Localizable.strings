@@ -10,8 +10,8 @@
 "PokemonImagesUrl" = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/%@.png";
 "PokemonImagesUrlHD" = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/%@.png";
 "HeightWithParam" = "%d M";
-"WidhtWithParam" = "%d KG";
+"WeightWithParam" = "%d KG";
 "WikiDex" = "WikiDex";
 "Height" = "Height";
-"Widht" = "Widht";
+"Weight" = "Weight";
 "Error" = "Something went wrong";

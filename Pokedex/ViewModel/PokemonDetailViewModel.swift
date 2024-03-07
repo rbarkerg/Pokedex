@@ -67,8 +67,8 @@ class PokemonDetailViewModel: BaseViewModel {
         return String(format: "HeightWithParam".localization(), pokemonDetail.height)
     }
     
-    var widht: String {
-        return String(format: "WidhtWithParam".localization(), pokemonDetail.weight)
+    var weight: String {
+        return String(format: "WeightWithParam".localization(), pokemonDetail.weight)
     }
     
     var types: [PokeType] {
