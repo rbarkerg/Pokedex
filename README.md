@@ -13,19 +13,14 @@ This project is an implementation of SwiftUI using the MVVM design pattern and c
   - [Lottie](https://swiftpackageindex.com/airbnb/lottie-ios)
  
  ### Screenshots 
+ <div style="overflow-x: auto;">
 <table>
   <tr>
     <td> 
       <img src="./Screenshots/Screenshot1.png" width="375" height="500">
     </td>
-    <td> 
-      <img src="./Screenshots/Screenshot2.png" width="375" height="500">
-    </td>
    <td> 
       <img src="./Screenshots/Screenshot3.png" width="375" height="500">
-    </td>
-    <td> 
-      <img src="./Screenshots/Screenshot4.png" width="375" height="500">
     </td>
     <td> 
       <img src="./Screenshots/Screenshot5.png" width="375" height="500">
@@ -35,3 +30,4 @@ This project is an implementation of SwiftUI using the MVVM design pattern and c
     </td>
   </tr>
 </table>
+</div>
