@@ -1,5 +1,5 @@
 # Pokedex
-This project is a implementation of swiftUI with MVVM and clean architecture, unit testing, resources management and fetch data from APIs with pagination.
+This project is an implementation of SwiftUI using the MVVM design pattern and clean architecture. It includes unit testing, resource management, and data fetching from APIs with pagination.
 
 ### Project specs 
 
